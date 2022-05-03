@@ -42,7 +42,7 @@ public class BST<E> implements Tree<E>{
 			boolean added = false;
 			while(!added)
 			{
-				if( toAdd.compareTo((E) temp) == 1)
+				if( toAdd.compareTo( temp) == 1)
 				{
 					if(temp.getRight() == null)
 					{
@@ -55,7 +55,7 @@ public class BST<E> implements Tree<E>{
 						temp = temp.getRight();
 					}
 				}
-				else if( toAdd.compareTo(temp) == 0 ||toAdd.compareTo(temp) == -1 )
+				else if( toAdd.compareTo(temp) == 0 ||toAdd.compareTo( temp) == -1 )
 				{
 					if( temp.getLeft() == null)
 					{

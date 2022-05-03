@@ -1,6 +1,6 @@
 package strcs;
 
-public class Node<E> implements Comparable<E>{
+public class Node<E> implements Comparable<Node <E>>{
 
     private E item;
     private Node<E> left;
@@ -65,9 +65,8 @@ public class Node<E> implements Comparable<E>{
 
 
 	@SuppressWarnings("unchecked")
-	@Override
-    public int compareTo(E o) {
-        return ((Comparable<E>) getItem()).compareTo(o);
+	public int compareTo(Node<E> temp) {
+        return ((Comparable<E>) getItem()).compareTo((E) temp);
     }
 
     @Override
